@@ -22,9 +22,9 @@
 /*
  * A Bump Allocator That is Based on A Pool.
  *
- * The First time BumpAlloc is included and ONLY Then, BA_IMPL should be Defined.
+ * The First time this file is included and ONLY Then, BA_IMPL should be Defined.
  *
- * BumpAlloc does not Link to libc by Default;
+ * BumpAlloc does Not Rely on libc by Default;
  * It Will Only do so if the User Defines BA_USE_LIBC.
  *
  *
@@ -33,7 +33,7 @@
  * The Pool Can be Reset Whenever The User May Wish.
  * Memory Reutilization is Implied After a Reset.
  *
- * Allocation is O(1) if it fits in the Pool, Returns NULL Otherwise.
+ * Allocation is Always O(1) if it fits in the Pool, Returns NULL Otherwise.
  * Allocating Does NOT Imply the Memory is Zeroed!
  * You Must First Initiate the Pool before Allocating, Otherwise You Will Always Get NULL.
  *
