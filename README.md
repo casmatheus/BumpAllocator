@@ -1,4 +1,4 @@
-# A Minimal Bump Allocator
+# A Single Header Bump Allocator
 
 ## Project Overview
 
