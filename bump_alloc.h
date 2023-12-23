@@ -156,8 +156,8 @@ void baReset(BaPool* pool) {
 void baDestroy(BaPool* pool) {
   if (pool->start) {
     baInternalOsFree(pool->start);
+    pool->start = NULL;
   }
-  pool->start = NULL;
 }
 
 #undef BA_IMPL
