@@ -22,7 +22,7 @@ The Library does not rely on libc by default, it will only do so if the user def
 
 ## Testing
 
-Testing BumpAllocator is as Compiling and Running BaTests.c in The Tests Folder
+To Test BumpAllocator Just Compile and Run `BaTests.c` in The `tests` Folder
 
 Currently, The Library Has Only Been Tested on Windows.
 
