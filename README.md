@@ -14,7 +14,7 @@ The Library does not rely on libc by default, it will only do so if the user def
 
 - `baInit(BaPool* pool, uint64_t total_size)`: Initializes the Bump Allocator Pool with a Specified Total Size, Call this Before Any Other Library Functions.
 
-- `baAlloc(BaPool* pool, uint64_t size)`: Allocates Memory of the Specified Ammount of Memory From The Pool.
+- `baAlloc(BaPool* pool, uint64_t size)`: Allocates the Specified Ammount of Memory From The Pool.
 
 - `baReset(BaPool* pool)`: Resets the Pool, Does not Set Memory to 0.
 
